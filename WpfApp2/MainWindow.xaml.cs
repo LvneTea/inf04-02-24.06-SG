@@ -37,7 +37,7 @@ namespace WpfApp2
 
             var lines = File.ReadAllLines(sciezkaPliku);
 
-            for (int i = 0; i + 3 < lines.Length; i += 5)
+            for (int i = 0; i + 3 < lines.Length; i += 20)
             {
                 if (int.TryParse(lines[i + 3].Trim(), out int rokWydania) &&
                     int.TryParse(lines[i + 4].Trim(), out int pobrane))
